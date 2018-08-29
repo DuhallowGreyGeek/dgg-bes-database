@@ -1,0 +1,26 @@
+/*** Step 4: Create Unique Index            ***/
+CREATE UNIQUE CLUSTERED INDEX IdxPersonId ON dbo.Person
+(
+	PersonId ASC
+)
+
+/*** Step 5: Foreign Key Index              ***/
+CREATE NONCLUSTERED INDEX IdxAddressId_FK ON dbo.Person
+(
+	AddressId ASC
+)
+
+CREATE TABLE Orders (
+    OrderID int NOT NULL PRIMARY KEY,
+    OrderNumber int NOT NULL,
+    PersonID int FOREIGN KEY REFERENCES Persons(PersonID)
+);
+
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    CONSTRAINT FK_PersonOrder FOREIGN KEY (PersonID)
+    REFERENCES Persons(PersonID)
+);
