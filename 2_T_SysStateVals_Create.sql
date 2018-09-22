@@ -15,9 +15,8 @@ CREATE TABLE dbo.SystemStateValues(
 GO
 
 INSERT INTO dbo.SystemStateValues(
-	ApplicationVersion,
-	DatabaseVersion 
+	ApplicationVersion, 	DatabaseVersion 
 )
-VALUES ('FirstApplicationVersion', 'FirstDatabaseVersion')
+VALUES ('Release: 0-1-3', 'Release: 0-1-2')
 GO
 

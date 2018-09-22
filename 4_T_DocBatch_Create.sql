@@ -13,7 +13,7 @@ CREATE TABLE dbo.DocBatch(
 	FileName varchar(50) NOT NULL,
 	DateCreated date NULL,
 	DateLoaded datetime NULL,
-	Description varchar(50) NULL
+	Description varchar(255) NULL
 ) ON [PRIMARY]
 
 GO

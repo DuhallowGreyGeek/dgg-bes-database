@@ -11,7 +11,7 @@ GO
 CREATE TABLE dbo.DocSynopsis(
 	DocumentId int,
 	PartNum smallint ,
-	Synopsis varchar(1024) NULL
+	Synopsis varchar(max) NULL
 	) ON [PRIMARY]
 GO
 
