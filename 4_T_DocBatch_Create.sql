@@ -15,5 +15,6 @@ CREATE TABLE dbo.DocBatch(
 	DateLoaded datetime NULL,
 	Description varchar(50) NULL
 ) ON [PRIMARY]
+
 GO
 

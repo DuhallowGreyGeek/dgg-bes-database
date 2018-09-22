@@ -11,6 +11,8 @@ GO
 CREATE TABLE dbo.Document(
 	DocumentId int IDENTITY (1,1) PRIMARY KEY,
 	DocumentLabel char(20) NOT NULL,
+	FileName varchar(50) NULL,
+	Path varchar(255) NULL,
 	Title varchar(50) NULL,
 	DateOnDoc date NULL,
 	DocBatchId int NULL

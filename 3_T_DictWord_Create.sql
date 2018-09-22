@@ -14,3 +14,6 @@ CREATE TABLE dbo.DictWord(
 ) ON [PRIMARY]
 GO
 
+CREATE UNIQUE INDEX UX_DictWord_WordText ON dbo.DictWord(WordText) 
+
+
