@@ -1,4 +1,4 @@
-USE [BessieDev]
+USE [BessieDev2]
 GO
 
 /****** CREATE Table [dbo].[SystemStateValues] ******/
@@ -17,6 +17,6 @@ GO
 INSERT INTO dbo.SystemStateValues(
 	ApplicationVersion, 	DatabaseVersion 
 )
-VALUES ('Release: 0-1-3', 'Release: 0-1-2')
+VALUES ('Release: 0-2-1', 'Release: 0-2-1')
 GO
 

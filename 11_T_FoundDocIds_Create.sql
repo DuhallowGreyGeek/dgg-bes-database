@@ -1,4 +1,4 @@
-USE [BessieDev]
+USE [BessieDev2]
 GO
 
 /****** CREATE:  Table [dbo].[FoundDocIds] ******/

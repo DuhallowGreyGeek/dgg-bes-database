@@ -1,4 +1,4 @@
-USE [BessieDev]
+USE [BessieDev2]
 GO
 CREATE VIEW WordUsage AS 
 select usg.DocumentId, usg.PartNum, usg.FieldIdent , usg.WordSeqNum, wrd.WordText 
